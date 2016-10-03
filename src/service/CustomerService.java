@@ -1,7 +1,7 @@
 package service;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 import model.Customer;
 
@@ -23,12 +23,14 @@ public class CustomerService {
 	}
 	
 	public Customer login(String id, String password){
-
-		return null;
-	}
-
-	public Customer findCustomer(String id){
-		if(id!=null)return(customers.get(id.toLowerCase()));
+		
+		if(id!=null&&password!=null)
+			return(customers.get(id.toLowerCase()));
 		else return null;
 	}
+
+/*	public Customer findCustomer(String id){
+		if(id!=null)return(customers.get(id.toLowerCase()));
+		else return null;
+	}*/
 }

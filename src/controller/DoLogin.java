@@ -36,8 +36,8 @@ public class DoLogin extends HttpServlet {
 		      //Perform business logic. Return a bean as a result.
 
 		      CustomerService service = (CustomerService)CustomerService.getInstance();
-//		      Customer customer = service.login(id,password);
-		      Customer customer = service.findCustomer(id);
+		      Customer customer = service.login(id,password);
+		      //Customer customer = service.findCustomer(id);
 
 		      
 		      String page = null;
